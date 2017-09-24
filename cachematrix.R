@@ -33,3 +33,21 @@ cacheSolve <- function(x, ...) {
 	x$setinv(m)
 	m   
 }
+##The answer testing is shown following
+##> nd_matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+##> nd_matrix$getinv()
+##NULL
+##> cacheSolve(nd_matrix)
+##     [,1] [,2]
+##[1,]   -2  1.5
+##[2,]    1 -0.5
+##>  cacheSolve(nd_matrix)
+##getting cached data
+##     [,1] [,2]
+##[1,]   -2  1.5
+##[2,]    1 -0.5
+##> nd_matrix$getinv()
+##     [,1] [,2]
+##[1,]   -2  1.5
+##[2,]    1 -0.5
+> 
